@@ -67,8 +67,8 @@ The crawler will yield output in JSON format similar to the following:
 - Add support for crawling JavaScript-heavy websites.
 - Enable parallel or distributed crawling.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Guideline
+- This Project is only for Education Purpose.
 
 ## Acknowledgments
 - [Scrapy Documentation](https://docs.scrapy.org)
