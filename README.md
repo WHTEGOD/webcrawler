@@ -55,11 +55,11 @@ The crawler will yield output in JSON format similar to the following:
 
 ```json
 [
-    {"title": Ollo, "price": "£12.84", "stock": ""},
+    {"title": "Ollo", "price": "£12.84", "stock": ""},
     {"title": "Libertarianism for Beginners", "price": "£51.33", "stock": ""},
     {"title": "It's Only the Himalayas", "price": "£45.17", "stock": ""},
 ]
--This Example is According to the Default selected Domain.
+
 ```
 
 ## Future Enhancements
