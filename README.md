@@ -1,7 +1,7 @@
 # Universal Web Crawler
 
 ## Overview
-The **Universal Web Crawler** is a Python-based web scraping tool developed using the Scrapy framework. This crawler is designed to traverse web pages, extract specific data, and store it for further analysis or use. It is highly configurable, allowing users to specify the start URLs and the domains to crawl.
+The Universal Web Crawler is a Python-based web scraping tool developed using the Scrapy framework. This crawler is designed to traverse web pages, extract specific data, and store it for further analysis or use. It is highly configurable, allowing users to specify the start URLs and the domains to crawl.
 
 ## Features
 - Crawls through specified URLs and follows links to scrape data.
@@ -10,9 +10,9 @@ The **Universal Web Crawler** is a Python-based web scraping tool developed usin
 - Configurable start URLs and allowed domains.
 
 ## Technologies Used
-- **Programming Language:** Python
-- **Framework:** Scrapy
-- **Libraries/Modules:** Scrapy, CSS Selectors
+- Programming Language: Python
+- Framework: Scrapy
+- Libraries/Modules: Scrapy
 
 ## Getting Started
 
@@ -26,7 +26,7 @@ pip install Scrapy
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/universal-web-crawler.git
+git clone https://github.com/WHTEGOD/universal-web-crawler.git
 cd universal-web-crawler
 ```
 
@@ -38,6 +38,7 @@ scrapy crawl universal_spider -a start_urls="http://example.com" -a allowed_doma
 ```
 - Replace `http://example.com` with your target URL.
 - The data will be saved in `output.json`.
+- In the Code if You don't enter the Target URL then there is already selected Target Domain [toscrape.com] and URL [http://books.toscrape.com/]
 
 ### Customization
 You can modify the `UniversalSpider` class in `universal_spider.py` to change the data you want to scrape or the logic of the spider.
@@ -45,22 +46,20 @@ You can modify the `UniversalSpider` class in `universal_spider.py` to change th
 ## Code Explanation
 The main components of the spider are:
 
-- **Spider Class:** Inherits from `CrawlSpider` and defines crawling behavior.
-- **Rules:** Specify how to follow links and which items to parse.
-- **Parse Item Method:** Extracts data from the pages and yields it.
+- Spider Class: Inherits from `CrawlSpider` and defines crawling behavior.
+- Rules: Specify how to follow links and which items to parse.
+- Parse Item Method: Extracts data from the pages and yields it.
 
 ## Example Output
 The crawler will yield output in JSON format similar to the following:
 
 ```json
 [
-  {
-    "url": "http://example.com/",
-    "title": "Example Domain",
-    "body": "<body>...</body>"
-  },
-  ...
+    {"title": Ollo, "price": "£12.84", "stock": ""},
+    {"title": "Libertarianism for Beginners", "price": "£51.33", "stock": ""},
+    {"title": "It's Only the Himalayas", "price": "£45.17", "stock": ""},
 ]
+-This Example is According to the Default selected Domain.
 ```
 
 ## Future Enhancements
@@ -77,7 +76,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ```
 
-### Instructions:
-1. **Replace `yourusername` in the clone URL** with your GitHub username or the relevant repository link.
-2. **Adjust the example URL and output format** according to your project's specifics.
-3. You may add additional sections as necessary, like contributions, issues, etc.
